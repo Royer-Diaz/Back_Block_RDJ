@@ -1,11 +1,11 @@
 var BlogsRouter = Backbone.Router.extend({
   routes : {
     'list' : 'showList',
-    'vehiculo/:index' : 'showVehiculo',
+    'vehiculo/:index' : 'showBlog',
     '*other' : 'showNotFound'
   },
   showList : function () {
-    var miView = new VehiculoComposite({collection : misVehiculos});
+    var miView = new BlogComposite({collection : misVehiculos});
     miView.render();
     jQuery('#content').html(miView.el);
   },

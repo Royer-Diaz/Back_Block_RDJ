@@ -1,6 +1,6 @@
 var BlogComposite = Marionette.CompositeView.extend({
   template : _.template('<h1>Temas de Interes</h1> \
-              <table id="vehiculos"> \
+              <table> \
                 <thead> \
                   <tr> \
                     <th>All Posts</th> \
@@ -18,7 +18,6 @@ var BlogComposite = Marionette.CompositeView.extend({
     var blogCid = $(e.target).data('cid');
     this.collection.remove(blogCid);
   }
-
 
 });
 
