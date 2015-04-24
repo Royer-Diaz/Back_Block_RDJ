@@ -12,21 +12,13 @@ var BlogComposite = Marionette.CompositeView.extend({
   childViewContainer : 'tbody',
   childView : blogView,
   events : {
-    'click .delete' : 'deleteBlog',
-'click .addComment' : 'createCommentd'
+    'click .delete' : 'deleteBlog'
   },
   deleteBlog : function (e) {
     var blogCid = $(e.target).data('cid');
     this.collection.remove(blogCid);
   }
-  createCommentd : function (e) {
-    var comentCid = $(e.target).data('cid'),
-      commentProp = {
-        comment : $('#inputComment').val(),
-          signe : $('#inputSigne').val() 
-      };
-    comentCid.get('comments').push(new Comment(commentProp));
-  }
+
 
 });
 

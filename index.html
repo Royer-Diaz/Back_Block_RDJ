@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Back_Block.js | Backbone Project</title>
+    <script src="js/util/jquery.js"></script>
+    <script type="text/javascript" src="js/util/underscore.js"></script>
+    <script type="text/javascript" src="js/util/bb.js"></script>
+    <script type="text/javascript" src="js/util/marionette.js"></script>
+    <script src="js/util/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/util/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util/bootstrap-theme.min.css">
+  </head>
+  <body class="container col-lg-12" >
+   <div class="container" id="content" >
+     
+      <header>
+         <div class="container row">
+           <!--   -->
+           <h1 class="center col-lg-12">Royer Diaz Blog</h1>
+         </div>
+
+      </header>
+      <div class="row">
+        <div id="form-container col-lg-12">
+          <form class="form-horizontal well bs-component col-lg-12" id="form-blog">
+            <fieldset>
+
+              <div class="form-group">
+                <label for="input-titulo" class="col-lg-2 control-label">Titulo:</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="input-titulo">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="text-contenido" class="col-lg-2 control-label">Contenido:</label>
+                <div class="col-lg-10">
+                  <textarea class="form-control" rows="6" id="text-contenido"></textarea>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="form-group">
+                <div class="col-lg-6 col-lg-offset-6">
+                  <a class="btn btn-primary col-lg-5 col-lg-offset-1" href="javascript:;" id="submit-blog">Crear</a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div id="content">
+
+
+        
+          
+          
+        </div>
+      </div>
+   </div>
+    <script type="text/javascript" src="js/backbone/models/comment.js"></script>
+    <script type="text/javascript" src="js/backbone/models/blog.js"></script>
+    <script type="text/javascript" src="js/backbone/collections/blogsCollection.js"></script>
+    <script type="text/javascript" src="js/backbone/views/blogView.js"></script>
+    <script type="text/javascript" src="js/backbone/views/blogComposite.js"></script>
+    <script type="text/javascript" src="js/backbone/views/blogFullView.js"></script>
+    <script type="text/javascript" src="js/backbone/routers/router.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

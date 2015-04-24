@@ -1,4 +1,4 @@
-var VehiculoView = Marionette.ItemView.extend({
+var BlogView = Marionette.ItemView.extend({
   tagName : 'tr',
   template : _.template('<td><%- titulo %></td><td><span class="delete" data-cid="<%- cid %>" >&otimes;</span></td>'),
   serializeData : function() {
