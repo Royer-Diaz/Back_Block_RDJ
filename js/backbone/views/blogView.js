@@ -1,12 +1,12 @@
 var BlogView = Marionette.ItemView.extend({
   tagName : 'tr',
-  template : _.template('<th><%- titulo %></th><th><span class="delete" data-cid="<%- cid %>" >&otimes;</span></th>'),
+  template : _.template('<td><%- titulo %></td><td><span class="delete" data-cid="<%- cid %>" >&otimes;</span></td>'),
   serializeData : function() {
     return {
       titulo : this.model.get('titulo'),
-      content : this.model.get('content'),
+      contenido : this.model.get('contenido'),
+      comments : this.model.get('comments'),
       cid : this.model.cid
     }
-  }
-  
+  } 
 });

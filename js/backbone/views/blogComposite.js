@@ -10,7 +10,7 @@ var BlogComposite = Marionette.CompositeView.extend({
                 </tbody> \
               </table> '),
   childViewContainer : 'tbody',
-  childView : blogView,
+  childView : BlogView,
   events : {
     'click .delete' : 'deleteBlog'
   },

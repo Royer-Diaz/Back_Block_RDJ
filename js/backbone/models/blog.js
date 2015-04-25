@@ -8,10 +8,7 @@ var Blog = Backbone.Model.extend({
   },
 
   setComments : function (_comments){
-    var comments = _comments;
-   comments.forEach(function(){
   	this.get('comments').push(comments);
-   }); 
   },
 
   initialize : function(){
